@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EduGenie - AI Learning Assistant</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <h1>🎓 EduGenie</h1>
+            <p>Google Gemini Powered Learning Assistant</p>
+        </div>
+    </header>
+
+
+    <main class="container">
+
+        <section class="hero">
+            <h2>Welcome to EduGenie!</h2>
+
+            <p>
+                Your personal AI learning assistant for
+                questions, explanations, summaries, quizzes,
+                and personalized learning paths.
+            </p>
+        </section>
+
+
+        <!-- ========================= -->
+        <!-- Q&A MODULE -->
+        <!-- ========================= -->
+
+        <section class="card">
+
+            <h2>💬 Ask EduGenie</h2>
+
+            <p>
+                Ask any educational question and get an AI-powered answer.
+            </p>
+
+            <form id="qaForm">
+
+                <label for="question">
+                    Your Question
+                </label>
+
+                <input
+                    type="text"
+                    id="question"
+                    placeholder="Example: What is DBMS?"
+                    required
+                >
+
+                <button type="submit">
+                    Get Answer
+                </button>
+
+            </form>
+
+            <div id="qaResult" class="output"></div>
+
+        </section>
+
+
+        <!-- ========================= -->
+        <!-- EXPLANATION MODULE -->
+        <!-- ========================= -->
+
+        <section class="card">
+
+            <h2>📚 Simple Explanation</h2>
+
+            <p>
+                Enter a topic and EduGenie will explain it
+                in simple language.
+            </p>
+
+            <form id="explainForm">
+
+                <label for="topic">
+                    Topic
+                </label>
+
+                <input
+                    type="text"
+                    id="topic"
+                    placeholder="Example: Photosynthesis"
+                    required
+                >
+
+                <button type="submit">
+                    Explain
+                </button>
+
+            </form>
+
+            <div id="explanationResult" class="output"></div>
+
+        </section>
+
+
+        <!-- ========================= -->
+        <!-- SUMMARY MODULE -->
+        <!-- ========================= -->
+
+        <section class="card">
+
+            <h2>📝 Summarize Text</h2>
+
+            <p>
+                Paste a paragraph and EduGenie will create
+                a simple summary.
+            </p>
+
+            <form id="summaryForm">
+
+                <label for="summaryText">
+                    Text to Summarize
+                </label>
+
+                <textarea
+                    id="summaryText"
+                    placeholder="Paste your paragraph here..."
+                    required
+                ></textarea>
+
+                <button type="submit">
+                    Summarize
+                </button>
+
+            </form>
+
+            <div id="summaryResult" class="output"></div>
+
+        </section>
+
+
+        <!-- ========================= -->
+        <!-- QUIZ MODULE -->
+        <!-- ========================= -->
+
+        <section class="card">
+
+            <h2>🧠 Generate Quiz</h2>
+
+            <p>
+                Enter a topic or passage and generate
+                three multiple-choice questions.
+            </p>
+
+            <form id="quizForm">
+
+                <label for="quizText">
+                    Topic or Passage
+                </label>
+
+                <textarea
+                    id="quizText"
+                    placeholder="Example: The Solar System..."
+                    required
+                ></textarea>
+
+                <button type="submit">
+                    Generate Quiz
+                </button>
+
+            </form>
+
+            <div id="quizResult" class="output"></div>
+
+        </section>
+
+
+        <!-- ========================= -->
+        <!-- LEARNING PATH MODULE -->
+        <!-- ========================= -->
+
+        <section class="card">
+
+            <h2>🗺️ Personalized Learning Path</h2>
+
+            <p>
+                Get a structured learning roadmap for any topic.
+            </p>
+
+            <form id="learningForm">
+
+                <label for="learningTopic">
+                    Topic
+                </label>
+
+                <input
+                    type="text"
+                    id="learningTopic"
+                    placeholder="Example: Python Programming"
+                    required
+                >
+
+                <button type="submit">
+                    Create Learning Path
+                </button>
+
+            </form>
+
+            <div id="learningResult" class="output"></div>
+
+        </section>
+
+
+        <!-- ========================= -->
+        <!-- FOOTER INFORMATION -->
+        <!-- ========================= -->
+
+        <section class="about">
+
+            <h2>About EduGenie</h2>
+
+            <p>
+                EduGenie is an AI-powered educational assistant
+                designed to help students learn more effectively.
+            </p>
+
+            <div class="features">
+
+                <div>
+                    <strong>🤖 AI Powered</strong>
+                    <span>Powered by Google Gemini</span>
+                </div>
+
+                <div>
+                    <strong>📖 Easy Learning</strong>
+                    <span>Simple explanations for students</span>
+                </div>
+
+                <div>
+                    <strong>🧠 Smart Practice</strong>
+                    <span>AI-generated quizzes</span>
+                </div>
+
+                <div>
+                    <strong>🚀 Personalized</strong>
+                    <span>Structured learning paths</span>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            © 2026 EduGenie | Google Gemini Powered Learning Assistant
+        </p>
+
+    </footer>
+
+
+    <script src="/static/script.js"></script>
+
+</body>
+</html>
