@@ -151,10 +151,6 @@ EduGenie aims to make AI-assisted learning simple, accessible, and useful for st
 * Deployment to a cloud platform
 * Personalized recommendations based on learning history
 
-## Author
-
-**Mega Malar M**
-
 BE Computer Science and Engineering Student
 
 ## License
